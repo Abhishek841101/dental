@@ -1,13 +1,4 @@
-export type Doctor = {
-  id: string;
-  slug: string;
-  name: string;
-  specialty: string;
-  experience: string;
-  qualification: string;
-  availableDays: string[];
-  avatar: string;
-};
+import type { Doctor } from "@/types/doctor";
 
 export const doctors: Doctor[] = [
   {
@@ -17,6 +8,8 @@ export const doctors: Doctor[] = [
     specialty: "Senior Dental Surgeon",
     experience: "15+ Years Experience",
     qualification: "BDS, MDS",
+    bio: "Dr. Sarah Sharma is an experienced dental surgeon focused on comprehensive dental care, preventive dentistry, and patient-friendly treatment.",
+    consultationFee: 500,
     availableDays: ["Monday", "Tuesday", "Thursday", "Friday"],
     avatar: "DS",
   },
@@ -27,6 +20,8 @@ export const doctors: Doctor[] = [
     specialty: "Cosmetic & Implant Dentist",
     experience: "12+ Years Experience",
     qualification: "BDS, MDS",
+    bio: "Dr. Amit Rao specializes in cosmetic dentistry and dental implants, helping patients achieve healthy and confident smiles.",
+    consultationFee: 700,
     availableDays: ["Monday", "Wednesday", "Friday", "Saturday"],
     avatar: "AR",
   },
@@ -37,6 +32,8 @@ export const doctors: Doctor[] = [
     specialty: "Orthodontist",
     experience: "10+ Years Experience",
     qualification: "BDS, MDS Orthodontics",
+    bio: "Dr. Priya Mehta specializes in orthodontic treatments, braces, aligners, and personalized smile correction plans.",
+    consultationFee: 600,
     availableDays: ["Tuesday", "Wednesday", "Thursday", "Saturday"],
     avatar: "PM",
   },
